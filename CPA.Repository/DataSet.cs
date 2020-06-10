@@ -5,19 +5,84 @@ namespace CPA.Repository
 {
    public class DataSet
     {
-        public static List<Data> Data = new List<Data>()
+         public static readonly List<ExamResult> examResults = new List<ExamResult>
         {
-            new Data() {Year = 2015, Subject = "Strategic Management Accounting", IsPassed = false},
-            new Data() {Year = 2016, Subject = "Strategic Management Accounting", IsPassed = true},
+            new ExamResult
+            {
+                Subject = "Strategic Management Accounting",
+                Results = new List<Score>
+                {
+                    new Score
+                    {
+                        Year = 2015,
+                        Grade = "FAIL"
+                    },
+                    new Score
+                    {
+                        Year = 2016,
+                        Grade = "PASS"
+                    },
 
-            new Data() {Year = 2015, Subject = "Financial Reporting", IsPassed = false},
-            new Data() {Year = 2016, Subject = "Financial Reporting", IsPassed = true},
+                }
+            },
+            new ExamResult
+            {
+                Subject = "Financial Reporting",
+                Results = new List<Score>
+                {
+                    new Score
+                    {
+                        Year = 2015,
+                        Grade = "FAIL"
+                    },
+                    new Score
+                    {
+                        Year = 2016,
+                        Grade = "PASS"
+                    },
 
-            new Data() {Year = 2016, Subject = "Advanced Taxation", IsPassed = true},
+                }
+            },
+             new ExamResult
+            {
+                Subject = "Advanced Taxation",
+                Results = new List<Score>
+                {
+                    new Score
+                    {
+                        Year = 2016,
+                        Grade = "PASS"
+                    },
 
-            new Data() {Year = 2015, Subject = "Financial Risk Management", IsPassed = true},
+                }
+            },
+              new ExamResult
+            {
+                Subject = "Financial Risk Management",
+                Results = new List<Score>
+                {
+                    new Score
+                    {
+                        Year = 2015,
+                        Grade = "PASS"
+                    },
 
-            new Data() {Year = 2015, Subject = "Advanced Audit and Assurance", IsPassed = true}
+                }
+            },
+               new ExamResult
+            {
+                Subject = "Advanced Audit and Assurance",
+                Results = new List<Score>
+                {
+                    new Score
+                    {
+                        Year = 2015,
+                        Grade = "PASS"
+                    },
+
+                }
+            }
+
         };
     }
 }
